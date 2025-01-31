@@ -2,8 +2,8 @@ site_name: Digital Design with Xilinx Programming
 site_description: 'Using the mkdocs build system with the material theme to to create and managed intelligent textbooks. All content licensed Creative Commons ShareAlike Attribution Noncommercial'
 site_author: 'Matthew Basken'
 repo_name: 'GitHub Repo'
-site_url: 'https://mcbasken.github.io/digital-design-textbook/'
-repo_url: 'https://github.com/mcbasken/digital-design-textbook'
+site_url: 'https://mcbasken.github.io/mkdocs/'
+repo_url: 'https://github.com/mcbasken/mkdocs'
 edit_uri: 'blob/master/docs'
 
 nav:
