@@ -1,0 +1,92 @@
+site_name: Digital Design with Xilinx Programming
+site_description: 'Using the mkdocs build system with the material theme to to create and managed intelligent textbooks. All content licensed Creative Commons ShareAlike Attribution Noncommercial'
+site_author: 'Matthew Basken'
+repo_name: 'GitHub Repo'
+site_url: 'https://mcbasken.github.io/digital-design-textbook/'
+repo_url: 'https://github.com/mcbasken/digital-design-textbook'
+edit_uri: 'blob/master/docs'
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Tutorial:
+    - Introduction: tutorial/index.md
+    - Getting Started: tutorial/getting-started.md
+    - Navigation: tutorial/navigation.md
+    - Admonitions: tutorial/admonitions.md
+    - Prompt Copy Admonition: tutorial/admonition-prompt-copy.md
+    - Quizzes: tutorial/quizzes.md
+    - Upper Alpha Lists: tutorial/upper-alpha-lists.md
+    - Adding a MicroSim: tutorial/adding-a-microsim.md
+    - Google Analytics: tutorial/google-analytics.md
+  - Prompts:
+    - Introduction: prompts/index.md
+    - Feature Mapping: prompts/feature-mapping.md
+    - Learning Graph:
+      - Introduction: prompts/learning-graph/index.md
+      - Enumerate Concepts: prompts/learning-graph/02-enumerate-concepts.md
+      - Dependency Graph: prompts/learning-graph/03-dependency.md
+      - Concept Taxonomy: prompts/learning-graph/04-taxonomy.md
+    - Generate Logo: prompts/generate-logo.md
+    - Generate Cover Image: prompts/generate-cover-image.md
+    - Intelligence Level Questions: prompts/level-questions.md
+    - Semantic Search: prompts/semantic-search.md
+    - Word Cloud: prompts/word-cloud.md
+    - Quality Metrics: prompts/quality-metrics.md
+    - Discord Admin: prompts/discord-admin.md
+    - Sims:
+      - Introduction: prompts/sims/index.md
+      - Word Cloud: sims/word-cloud/index.md
+      - Learning Graph: sims/learning-graph/index.md
+      - Gallery: sims/index.md
+      - Sine Wave: sims/sine-wave/index.md
+  - Feedback: feedback.md
+  - Glossary: glossary.md
+  - Table of Contents: toc.md
+  - License: license.md
+  - How We Built This Site: how-we-built-this-site.md
+  - References: references.md
+  - Contact: contact.md
+ 
+# CoderDojo Microsite Standards from here down
+
+theme:
+  name: material
+  logo: img/logo.png
+  favicon: img/favicon.ico
+  # favicon: img/my-icon.png
+  palette:
+    primary: 'blue'
+    accent: 'orange'
+  include_sidebar: true
+  features:
+    - content.code.copy
+    - navigation.expand
+    - navigation.path
+    - navigation.prune
+    - navigation.indexes
+    - toc.follow
+    - navigation.top
+    # this adds the prev and next icons in the footer
+    - navigation.footer
+    - content.action.edit
+plugins:
+  - search
+#  - social
+markdown_extensions:
+  - admonition
+  - md_in_html # required for multiple-choce question numbering
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - pymdownx.highlight:
+      linenums: true
+extra_css:
+   - css/extra.css
+extra_javascript:
+    - js/extra.js
+extra:
+  analytics:
+    provider: google
+    # https://analytics.google.com/analytics/web/#/a1420179p349994530/admin/streams/table/4433129821
+    property: G-D7X1XT7Z19
